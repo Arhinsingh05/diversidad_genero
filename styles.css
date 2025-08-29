@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(243, 188, 252);
+  
+  color: black;
+  padding-top: 70px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+h1{
+  font-family: gentiun book basic;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 5px rgb(252, 153, 239);
+}
+
+.navheader{
+  box-shadow: 0 4px 5px #e5e5e5;
+  position: fixed;
+  background-color: rgb(244, 242,248);
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.logo{
+  display: flex;
+  margin: 0px;
+  align-items: center;
+  font-weight: 500;
+  color: white;
+}
+.logo img{
+  border-radius: 50%;
+}
+
+.navbar{
+  display: flex;
+  border: 1px solid rgb(247, 172, 224);
+  justify-content: space-between;
+  background-color: rgb(246, 12, 133);
+  height: 55px;
+  padding: 5px 12px;
+  position: relative;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.checkbox, .icons{
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  cursor: pointer;
+} 
+
+.icons{
+  pointer-events: none;
+}
+
+.checkbox{
+  opacity: 0;
+}
+
+.iconcerrar{
+  display: none;
+}
+.checkbox:checked ~ .iconbarra{
+  display: none;
+}
+.checkbox:checked ~ .iconcerrar{
+  display: block;
+}
+.menu{
+  width: 200px;
+  position: absolute;
+  top: 54px;
+  right: 0px;
+  display: none;
+}
+.menu li{
+  list-style: none;
+}
+.menu li a{
+  text-decoration: none;
+  color: inherit;
+  background-color: rgb(238, 150,225);
+  display: block;
+  padding: 10px 12px;
+}
+.menu li a:hover{
+  background-color: blue;
+  color: white;
+}
+.menu li a.activate {
+  background-color: rgb(246, 17, 185);
+  color: white;
+}
+
+.checkbox:checked ~ .menu{
+  display:block;
+}
+
+.img-perfil {
+
+  margin-bottom: 25px;
+  width: 80%;
+  max-width: 300px;
+}
+div {
+    background-color: rgb(254, 167, 211);
+}
+
+.class {
+  background-color: rgb(7, 67, 246);
+  display: inline-flex;
+  text-size-adjust: 40px;
+  padding: 10px;
+
+}
+.class a{
+  text-decoration: none;
+  font-size: 30px;
+  color: rgba(210,17,248,0.97);
+  background-color: rgb(238,150,225);
+  padding: 0 40px 0 40px;
+  margin: 0px;
+}
+li{
+  list-style: none;
+  text-align: center;
+}
+
+.copywrite{
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-between;
+  background-color: #57ca5b;
+  height: 50px;
+  padding: 5px 12px;
+  position: relative;
+  margin: 0 auto;
+}
+@media (min-width: 560px){
+  .iconcerrar{
+    display: none;
+  }
+  .checkbox:checked ~ .menu{
+    display: flex;
+  }
+  
+  .checkbox, .icons{
+    display: none;
+  }
+  .menu{
+    top: 0;
+    width: unset;
+    display: flex;
+    height: 55px;
+  }
+  .menu li a{
+    height:55px;
+    padding: 16px 12px 6px;
+  }
+  .copywrite{
+  height: 40px;
+  max-width: 980px;
+}
+
+} .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 100px;
+    column-gap: 20px;
+    row-gap: 30px;
+    height: 500px;
+    align-items:center;
+
+}
+
+body{
+    background-color: rgb(95, 255, 242);
+}
+
+div{
+    background-color: rgb(254, 167, 211);
+    padding: 10px;
+    border: solid rgb(149, 255, 10) 1px; 
+
+    }
